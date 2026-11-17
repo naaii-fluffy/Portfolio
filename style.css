@@ -163,7 +163,7 @@ body::after {    /* soft blotches, like uneven old paper */
 .win.open .shutter-l { transform: rotateY(-84deg); }
 .win.open .shutter-r { transform: rotateY(84deg); }
 @media (hover: hover) { .win:hover .shutter-l { transform: rotateY(-84deg); } .win:hover .shutter-r { transform: rotateY(84deg); } }
-/* .under-frame-box { max-width: 900px; margin: 2rem auto; text-align: center; position: relative; top: -30px; } */
+
 
 /* ---------- SKILLS: the velvet curtain ---------- */
 .drape { position: absolute; top: 0; left: 0; right: 0; z-index: 2; height: 100%; display: flex; align-items: center; justify-content: center; overflow: hidden; border-bottom: 4px solid var(--gold);
@@ -190,3 +190,19 @@ body::after {    /* soft blotches, like uneven old paper */
   *, *::before, *::after { animation: none !important; transition: none !important; }
   .js .hang { opacity: 1; transform: none; }
 }
+
+/*mobile version*/
+html, body { overflow-x: hidden; max-width: 100%; }
+
+@media (max-width: 768px) {
+  .masthead { font-size: 2.5rem; }
+  .button-group { flex-direction: column; gap: 1rem; align-items: stretch; }
+  .button-group .btn-pill { width: 100%; text-align: center; }
+  .masthead-line { font-size: 1.2rem; margin-bottom: 0.5rem; }
+  img, frame, .card { max-width: 100%; height: auto; }
+  .hero { padding-top: 5rem; }
+  .room-title { font-size: 3rem; }
+  .pull { font-size: 2rem; }
+  .specimen { min-height: 8rem; } }
+
+  
